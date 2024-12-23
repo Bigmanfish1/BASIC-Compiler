@@ -1,0 +1,118 @@
+10 DIM M(7, 20)
+20 LET f = 0
+30 LET varName1 = 0
+40 LET varName2 = 0
+50 LET varName3 = 0
+60 LET varName4 = 0
+
+70 LET varName1 = 7
+80 INPUT varName2
+90 LET varName3 = 4
+100 LET f = f + 1
+110 IF f > 20 THEN
+120 LET f = f - 1
+130 RETURN
+140 END IF
+150 LET M(1, f) = varName1
+160 LET M(2, f) = varName2
+170 LET M(3, f) = varName3
+180 GOSUB 350
+190 LET varName4 =  M(0,f)
+
+210 LET varName2 = varName4 + varName2 * varName3
+220 PRINT varName4
+230 LET f = f + 1
+240 IF f > 20 THEN
+250 LET f = f - 1
+260 RETURN
+270 END IF
+280 LET M(1, f) = 20
+290 LET M(2, f) = varName2
+300 LET M(3, f) = varName3
+310 GOSUB 820
+320 LET f = f - 1
+330 REM END
+
+340 END
+350 REM DEF FNfunctionName1(a1, a2, a3)
+360 LET varName5 = M(1, f)
+370 LET varName6 = M(2, f)
+380 LET varName7 = M(3, f)
+390 LET varName8 = 0
+400 LET varName9 = 0
+410 LET varName10 = 0
+420 LET M(4, f) = varName8
+430 LET M(5, f) = varName9
+440 LET M(6, f) = varName10
+450 IF varName6 > 0 THEN
+460 LET varName6 = varName6 - 1
+470 LET M(1, f) = varName5
+480 LET M(2, f) = varName6
+490 LET M(3, f) = varName7
+500 LET M(4, f) = varName8
+510 LET M(5, f) = varName9
+520 LET M(6, f) = varName10
+530 LET f = f + 1
+540 IF f > 20 THEN
+550 LET f = f - 1
+560 RETURN
+570 END IF
+580 LET M(1, f) = varName5
+590 LET M(2, f) = varName6
+600 LET M(3, f) = varName10
+610 GOSUB 350
+620 LET varName5 = M(1, f)
+630 LET varName6 = M(2, f)
+640 LET varName7 = M(3, f)
+650 LET varName8 = M(4, f)
+660 LET varName9 = M(5, f)
+670 LET varName10 = M(6, f)
+680 LET varName8 =  M(0,f)
+
+700 LET varName9 = varName8 + varName6
+710 PRINT varName9
+720 REM END
+730 ELSE
+740 REM DO NOTHING
+750 REM END
+760 END IF
+770 LET f = f - 1
+780 LET M(0, f) = varName6
+790 RETURN
+800 REM END
+820 REM DEF FNfunctionName2(a1, a2, a3)
+830 LET varName11 = M(1, f)
+840 LET varName12 = M(2, f)
+850 LET varName13 = M(3, f)
+860 LET varName14 = 0
+870 LET varName15 = 0
+880 LET varName16 = 0
+890 LET M(4, f) = varName14
+900 LET M(5, f) = varName15
+910 LET M(6, f) = varName16
+920 PRINT varName11
+930 LET varName14 = varName11 + 1
+940 LET M(1, f) = varName11
+950 LET M(2, f) = varName12
+960 LET M(3, f) = varName13
+970 LET M(4, f) = varName14
+980 LET M(5, f) = varName15
+990 LET M(6, f) = varName16
+1000 LET f = f + 1
+1010 IF f > 20 THEN
+1020 LET f = f - 1
+1030 RETURN
+1040 END IF
+1050 LET M(1, f) = varName14
+1060 LET M(2, f) = varName15
+1070 LET M(3, f) = varName16
+1080 GOSUB 820
+1090 LET f = f - 1
+1100 LET varName11 = M(1, f)
+1110 LET varName12 = M(2, f)
+1120 LET varName13 = M(3, f)
+1130 LET varName14 = M(4, f)
+1140 LET varName15 = M(5, f)
+1150 LET varName16 = M(6, f)
+1160 REM END
+1170 RETURN

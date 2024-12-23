@@ -1,0 +1,43 @@
+main
+    num V_x , num V_y , num V_z , num V_res ,
+    begin
+        V_x = 7 ;
+        V_y < input ;
+        V_z = 4 ;
+        V_res = F_b ( V_x , V_y , V_z ) ;
+        V_y = add ( V_res , mul ( V_y , V_z ) ) ;
+        print V_res ;
+        F_a ( 20 , V_y , V_z ) ;
+    end
+
+    num F_b ( V_a , V_b , V_c )
+    {
+        num V_d , num V_e , num V_y ,
+        begin
+            if grt ( V_b , 0 )
+            then
+                begin
+                    V_b = sub ( V_b , 1 ) ;
+                    V_d =  F_b ( V_a , V_b , V_y ) ;
+                    V_e = add ( V_d , V_b ) ;
+                    print V_e ;
+                end
+            else
+                begin
+                    skip ;   
+                end
+            ;
+            return V_b ;
+        end
+    }
+    end
+    void F_a ( V_a , V_b , V_c )
+    {
+        num V_d , num V_e , num V_y ,
+        begin
+            print V_a ;
+            V_d = add ( V_a , 1 ) ;
+            F_a ( V_d , V_e , V_y ) ;
+        end
+    }
+    end

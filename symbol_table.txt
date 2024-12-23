@@ -1,0 +1,19 @@
+----LARGE SYMBOL TABLE----
+  Variable: 4 -> Unique Name: varName1, UNID: 4, Original Name: V_x, TYPE: n
+  Variable: 164 -> Unique Name: varName8, UNID: 164, Original Name: V_d, TYPE: n
+  Variable: 326 -> Unique Name: varName14, UNID: 326, Original Name: V_d, TYPE: n
+  Variable: 9 -> Unique Name: varName2, UNID: 9, Original Name: V_y, TYPE: n
+  Variable: 169 -> Unique Name: varName9, UNID: 169, Original Name: V_e, TYPE: n
+  Variable: 331 -> Unique Name: varName15, UNID: 331, Original Name: V_e, TYPE: n
+  Variable: 14 -> Unique Name: varName3, UNID: 14, Original Name: V_z, TYPE: n
+  Variable: 174 -> Unique Name: varName10, UNID: 174, Original Name: V_y, TYPE: n
+  Variable: 336 -> Unique Name: varName16, UNID: 336, Original Name: V_y, TYPE: n
+  Variable: 147 -> Unique Name: functionName1, UNID: 147, Original Name: F_b, TYPE: n
+  Variable: 19 -> Unique Name: varName4, UNID: 19, Original Name: V_res, TYPE: n
+  Variable: 309 -> Unique Name: functionName2, UNID: 309, Original Name: F_a, TYPE: v
+  Variable: 150 -> Unique Name: varName5, UNID: 150, Original Name: V_a, TYPE: n
+  Variable: 312 -> Unique Name: varName11, UNID: 312, Original Name: V_a, TYPE: n
+  Variable: 153 -> Unique Name: varName6, UNID: 153, Original Name: V_b, TYPE: n
+  Variable: 315 -> Unique Name: varName12, UNID: 315, Original Name: V_b, TYPE: n
+  Variable: 156 -> Unique Name: varName7, UNID: 156, Original Name: V_c, TYPE: n
+  Variable: 318 -> Unique Name: varName13, UNID: 318, Original Name: V_c, TYPE: n

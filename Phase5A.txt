@@ -1,0 +1,16 @@
+t1 := 7 
+varName1 := t1
+INPUT varName2
+t2 := 4 
+varName3 := t2
+t3 := CALL_functionName1(varName1,varName2,varName3)
+varName4 := t3
+t5 := varName4
+t7 := varName2
+t8 := varName3
+t6:=t7*t8
+t4:=t5+t6
+varName2 := t4
+PRINT varName4
+null := CALL_functionName2( 20 ,varName2,varName3)REM END
+STOP

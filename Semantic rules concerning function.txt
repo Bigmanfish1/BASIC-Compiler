@@ -1,0 +1,21 @@
+Semantic rules concerning function names
+- The main program forms the highest level scope, with no parent
+- Every function declaration opens it's own scope
+- a child scope may not have the same name as its immediate parent scope
+- a child scope may not have the same name as any of its sibling scopes under the same parent
+- a call command may refer to an immediate child scope
+- a call command may refer to its own scope: that is RECURSION
+- there may be no recursive call to main
+- your compiler semantic analysis module must throw an error report if any of the semantic rules of above are violated
+
+
+
+Semantic rules concerning variable names
+- No variable name may be double declared in the same scope e.g. No string X and also number X
+- The declaration of a used variable name must be found either within that name's own scope, or in any higher ancestor scope.
+- if a used variable name has two declarations in two different scopes, then the nearest declaration is the relevant declaration for that variable
+- every used variable name must have a declaration
+- no variable anywhere in the RecSPL program may have a name that is also used as a function name anywhere in the program
+- no variable name anywhere in the RecSPL program may be identical with any Reserved keyword
+- Two variables with the same name are different computational entities if they are rooted in different scopes
+- Your compiler SEMANTIC ANALYSIS MODULE must throw an Error report if any of the semantic rules of above are violated
